@@ -175,7 +175,7 @@ client.on('ready', () => {
     console.log('Estou pronto!'); 
     console.log("Conectei no canal " + client.guilds.map(g => g.name));
     client.user.setStatus('online');
-    client.user.setActivity("alegria para + "client.users.size +" usuários | "+ client.guilds.size +" Servidores", { type: 'PLAYING' });
+    client.user.setActivity("Proteção para o Castelo do Hazard", { type: 'PLAYING' });
 
     client.channels.filter(c => c.type === 'voice' && c.members.has(client.user.id)).forEach(async (chan)  => {
       await chan.leave();
